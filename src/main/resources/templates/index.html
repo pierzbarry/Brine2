@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head th:replace="base :: head"></head>
+<body>
+
+<!--Navigation-->
+<nav th:replace="base :: navbar"></nav>
+
+<!--Image Slider-->
+<div id="slides" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://media.giphy.com/media/WKtB7yK9OttAY/giphy.gif" class="img-flip">
+            <div class="carousel-caption">
+                <h1 class="display-2">Brine</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Jumbotron-->
+<div class="container-fluid">
+    <div class="row jumbotron ">
+        <!--    dynamic size based on pixel width of browser-->
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">This is only here cause I felt like it needed something a bit more.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#"><button type="button" class="btn btn-outline-secondary">Button for fun</button></a>
+        </div>
+    </div>
+</div>
+
+<!--Welcome Section-->
+<div id="blog" class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Soaked in salt.</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">Hello and welcome to my blog!<br/>I've made a lot of posts already which might be a bit overwhelming, so I divided them into five different topics to make it more digestible. Go ahead and click the pic of whichever subject you're interested in to learn more about it.</p>
+        </div>
+    </div>
+</div>
+
+<!--Three Column Section-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4 space">
+            <a href="/design"><i class="fas fa-palette fa-6x"></i></a>
+            <h3>Design</h3>
+            <p>The ins and outs of HTML, CSS, and Bootstrap</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 space">
+            <a href="/github"><i class="fab fa-github fa-6x"></i></a>
+            <h3>GitHub</h3>
+            <p>Learn about the open-source repository hosting service.</p>
+        </div>
+        <div class="col-sm-12 col-md-4 space">
+            <a href="/java"><i class="fas fa-mug-hot fa-6x"></i></a>
+            <h3>Core Java</h3>
+            <p>Java language fundamentals, a must for any Java programmers.</p>
+        </div>
+        </div>
+<div class="container-fluid padding">
+<div class="row text-center padding">
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="/oop"><i class="fas fa-cube fa-6x spa"></i></a>
+            <h3>Object Oriented</h3>
+            <p>Discover the programming paradigm based on the concept of "objects".</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="/algorithms"><i class="fas fa-calculator fa-6x"></i></a>
+            <h3>Algorithms</h3>
+            <p>Tell your computer precisely what steps to take to solve a problem.</p>
+        </div>
+    </div>
+</div>
+</div>
+    <hr id="about" class="my-4">
+</div>
+
+<!--<hr class="my-4">-->
+
+<!--Fixed Background-->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+
+        </div>
+    </div>
+</figure>
+
+<div class="container-fluid padding">
+<div class="row padding">
+    <div class="col-lg-6">
+        <h2>About the Author:</h2>
+        <p>My name is Pierz and I really don't have any care nor desire to spend even the slightest amount of time describing or explaining myself to you.</p>
+        <p>k thnx bye <3</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="col-lg-6">
+        <img src="https://i.imgur.com/EofME9c.png" class="img-fluid">
+    </div>
+</div>
+</div>
+
+<hr class="my-4"/>
+
+<!--Connect-->
+<div id="contact" class="container-fluid padding">
+<div class="row text-center">
+    <div class="col-12">
+        <h2 class="connect">- Find Me On -</h2>
+    </div>
+    <div class="col-12 social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+</div>
+
+<!--Footer-->
+<footer th:replace="base :: footer"></footer>
+<th:block th:replace="base :: jslinks"></th:block>
+</body>
